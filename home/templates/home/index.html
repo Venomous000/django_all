@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Cars</h1>
+    <ul>
+        {% for car in cars %}
+            <li>{{ car.car_name }} - Speed: {{ car.speed }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Students</h1>
+    <ul>
+        {% for student in students %}
+            <li>{{ student.name }} - Email: {{ student.email }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
